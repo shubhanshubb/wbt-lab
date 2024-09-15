@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Project7</title>
+<style>
+        body{
+            background-color:gold;
+            text-align: center;
+        }
+        #content ,#content2{
+            text-shadow: 1px 1px 5px rgb(113, 34, 0);
+            font-size: 20px;
+            font-weight: bolder;
+         }
+    </style>
+</head> 
+<body>
+    <h1>ACCESSING OBJECT BY USING JAVASCRIPT </h1>
+    <br><br><h3>Student Details are displayed Below:</h3> <br><br> 
+    <p id="content"></p>
+    <p id="content2"></p>   
+    <script>
+        var student = {
+        name: "SHUBHANSHU",
+        class : "CSE 6",
+        section : "C",
+        studentDetails : function() {
+            return this.name + " " + this.class
+                + " " + this.section + " ";
+        }
+    };
+    var student2 = {
+        name: "UZMA",
+        class : "CSE 6",
+        section : "C",      
+        studentDetails : function() {
+            return this.name + " " + this.class
+                + " " + this.section + " ";
+        }
+    };
+
+    // Display object data
+    document.getElementById("content").innerHTML
+        = "STUDENT  1 : &nbsp;&nbsp;&nbsp;" + student.studentDetails() ;
+
+    document.getElementById("content2").innerHTML
+        = "STUDENT 2 : &nbsp; &nbsp;&nbsp;" + student2.studentDetails();
+    
+</script>
+
+</body>
+
+</html>  

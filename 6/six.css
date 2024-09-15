@@ -1,0 +1,12 @@
+body{
+    font-family: cursive;
+    background-color: skyblue;
+    }
+    form{
+    margin-left: 17rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+    sans-serif;
+    }
+    .edit{
+    margin-left: 4rem;
+    }
